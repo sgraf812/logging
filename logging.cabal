@@ -47,7 +47,8 @@ Library
       , time-locale-compat   >= 0.1.1.0
       , transformers         >= 0.3.0.0
       , lifted-base          >= 0.2.2.0
-      , regex-compat         >= 0.95.1
+      , regex-base           >= 0.93.2
+      , regex-tdfa-text      >= 1.0.0.3
     exposed-modules:
         Control.Logging
     default-extensions:
@@ -64,7 +65,6 @@ test-suite test
     build-depends:
         base
       , logging
-      , unix                 >= 2.5.1.1
       , hspec                >= 1.4
     default-extensions:
         OverloadedStrings
